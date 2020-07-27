@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+	      <title>Shopping Market</title>
+	 <meta charset="UTF-8">
+	 <meta name="author" content="Mahendra Choudhary">
+	 <meta name="keywords" content="xyz">
+	 <meta name="description" content="xyz">
+	 <meta name="viewport" content="width=device-width,initial-scale=1">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <script>
+	   function myCtrl(){
+		   document.getElementById("ctrl").style.display = "block";
+	   } 
+		 function myExit(){
+			 document.getElementById("ctrl").style.display = "none";
+		 }
+	</script>
+	 <script>
+	  $(document).ready(function(){
+	  $("#drop").click(function(){
+	  $("#lock").slideToggle();
+	  });
+	  $("#login").click(function(){
+	  $(".signin").css({"visibility":"visible"});
+	  $(".signup").css({"visibility":"hidden"});
+	  });
+	  $("#logon").click(function(){
+	  $(".signup").css({"visibility":"visible"});
+	  $(".signin").css({"visibility":"hidden"});
+	  });
+	  $("#man").click(function(){
+	  $(".watch").fadeToggle("fast");
+	  $(".girl").css("display","none");
+	  });
+	  $("#woman").click(function(){
+	  $(".girl").fadeToggle("fast");
+	  $(".watch").css("display","none");
+	  });
+	  });
+	 </script>
+	 <style>
+	 #first
+	 {
+	 background-color:black;
+	 color:white;
+	 height:40px;
+	 padding-top:8px;
+	 }
+	 .menubar
+	 {
+	 width:100%;
+	 height:auto;
+	 color:black;
+	 }
+	 #frow
+	 {
+	  width:30%;
+	 }
+	 #srow
+	 {
+	  width:70%;
+	 }
+	 #searchbar
+	 {
+	 height:40%;
+	 width:80%;
+	 padding-top:20px;
+	 }
+	 #search
+	 {
+	 height:40%;
+	 width:15%;
+	 padding-top:20px;
+	 }
+	 .bajar
+	 {
+	 font-size:30px;
+	 font-weight:900;
+	 font-family:cooper;
+	 padding-top:20px;
+	 }
+	 .icon {
+       width: 35px;
+       height: 35px;
+       border: 3px solid black;
+       float: left;
+       padding: 2px;
+       margin:3%;
+       }
+		 .icon1 {
+       width: 35px;
+       height: 35px;
+       border: 3px solid white;
+       float: left;
+       padding-left: 7px;
+       margin:3%;
+       }
+	   #col{
+	   border-radius:5px 5px 5px 5px;
+	   color:white;
+	   text-align:center;
+	   padding-top:20px;
+	   height:70px;
+	   }
+	   #col:hover{
+	   
+	   color:black;
+	   background-color:ghostwhite;
+	   }
+	   
+	   #menubar
+	   {
+	   width:80%;
+	   
+	   }
+	   #menu{
+	    width:18%;
+	   }
+	   #bar{
+	   visibility:hidden;
+	   background-color:black;
+	   color:white;
+	   position:relative;
+	   float:left;
+		padding: 7px;   
+	   padding-left: 15px;	   
+	   width:50%;
+	   }
+	   .drop{
+	   width:50%;
+	   float:left;
+	   padding-top:10px; 
+	   
+	   }
+	   #lock{
+	   width:100%;
+	   display:none;
+	   position:absolute;
+	   top:100%;
+	   left:0;
+	   text-align:center;
+	   }
+	   #surya{
+	   width:100%;
+	   height:50px;
+	   background-color:black;
+	   color:white;
+	   display:none;
+	   }
+	   .signin{
+	    width:50%;
+		height:400px;
+		background-color:white;
+		position:absolute;
+		top:10%;
+		color:black;
+		box-shadow: 5px 5px 8px black;
+		border-radius:5px;
+		left:25%;
+		z-index:8;
+        visibility:hidden;	  
+	  }
+	   .signup{
+	    width:50%;
+		height:550px;
+		background-color:white;
+		color:black;
+		box-shadow: 5px 5px 8px black;
+		border-radius:5px;
+		position:absolute;
+		top:10%;
+		left:25%;
+		z-index:8;
+        visibility:hidden;	  
+	  }
+		 ::placeholder{
+			 color:yellowgreen;
+			 font-weight: bold;
+			 
+		 }
+	  .farm{
+	  width:80%;
+	  height:auto;
+	  color:black;
+	  float:left;
+	  padding-top:10px;
+	  font-family:cooper;
+	  }
+		 #ctrl{
+			 background-color: white;position: absolute;box-shadow: 3px 3px 5px black;font-size:20px;font-weight: 600; top:15%;left:55%;display:none;width:350px; height:120px;z-index:15;text-align:center;padding-top: 10px;
+		 }
+	  .cross{
+	  width:20%;
+	  height:auto;9
+	  color:black;
+	  float:left;
+	  padding-top:15px;
+	  }
+	  .first{
+	  width:100%;
+	  height:120px;
+	  margin-top:12%;
+	  }
+	  .second{
+	  width:100%;
+	  height:120px;
+	  
+	  }
+	  .third{
+	   width:100%;
+	  height:40px;
+	 margin-top:2%;
+	  } 
+	  .one{
+	  width:100%;
+	  height:90px;
+	  margin-top:12%;
+	  }
+	  .two{
+	  width:100%;
+	  height:90px;
+	  
+	  }
+	  .three{
+	   width:100%;
+	  height:40px;
+	 margin-top:5%;
+	  } 
+	  .email{
+	  width:80%;height:50px;margin-left:10%;float:left;
+	  }
+	  .gmail{
+	  width:80%;height:32px;margin-left:10%;float:left;
+	  }
+	  .button{
+	  width:30%;
+	  height:40px;
+	  background-color:black;
+	  color:white;
+	  padding-top:8px;
+	  }
+	  .button:hover{
+	  background-color:black;
+	  color:white;
+	  outline: 4px groove black;
+      outline-offset: 3px;
+	  cursor: pointer;
+	  padding-top:8px;
+	  }
+	  .add{
+	  width:50%;float:left;color:white;text-align:right;padding-top:10px;
+	  }
+	  a{
+	    text-decoration:none;
+		color:white;
+	  }
+	  a:hover{
+	  text-decoration:none;
+	  color:white;
+	  }
+	  
+	  #col:hover a{
+	  color:black;
+	  }
+	  #surya:hover a{
+	  color:blue;
+	  }
+	  #col a{
+	    color:white;
+	  }
+	  .slide{
+	    width:100%;
+		height:500px;
+		position:relative;
+	  }
+	  
+	  .watch{
+	   width:70%;
+	   height:300px;
+	   background-color:white;
+	   position:absolute;
+	   display:none;
+	   top:100%;
+	   box-shadow: 3px 3px 5px black;  
+	   border:1px solid pink;
+	   border-radius:10px;
+	   left:5%;
+	   color:green;
+	   z-index:2;
+	  }
+	   .watch2{
+	   width:80%;
+	   height:90%;
+	   margin:2.5% 10% 2.5% 10%;
+	   
+	   }
+	   .gadi{
+	   width:40%;
+	   height:100%;
+	   background-image:url('r.jpg');
+	   background-size:100% 100%;
+	   box-shadow:4px 4px 5px black;
+	   border-radius:10px;
+	   float:left;
+	   }
+	   .gadi:hover{
+	     transition:0.5s all;
+		 height:60%;
+		 border-radius:50%;
+		 box-shadow:0px 0px 25px 2px black;
+		 margin-top:8%;
+	   }
+	   .jooti{
+	   width:40%;
+	   height:100%;
+	   background-image:url('j.jpg');
+	   background-size:100% 100%;
+	   border-radius:10px;
+	   box-shadow:4px 4px 5px black; 
+	   float:left;
+	   }
+	   .jooti:hover{
+		 margin-top:4%;
+		 height:80%;
+		 box-shadow:0px 0px 25px 2px black;
+		 transition:0.5s all;
+	   }
+	   .item{
+	   width:30%;
+	   height:100;
+	   float:left;
+	   }
+	   .girl{
+	   width:70%;
+	   height:300px;
+	   background-color:white;
+	   position:absolute;
+	   top:100%;
+	   box-shadow: 3px 3px 5px black;	   
+	   display:none;
+	   left:25%;
+	   border:1px solid pink;
+	   border-radius:10px;
+	   z-index:3;
+	   }
+	   ul a{
+	    color:black;
+	   }
+	   ul a:hover{
+	   color:blue;
+	   }
+	   .line{
+	  width:80%;
+	  height:80%;
+	  background:transparent;
+	  border:4px solid white;
+	  position:absolute;
+	  top:10%;
+		  
+	  visibility:hidden;
+	  transform: translate3d(-20px,0,0);
+		transition: opacity 1s, transform 0.35s;	  
+	  left:10%;
+	  }
+		#things{
+		position:relative;
+		height:250px;
+		bourder: 4px solid black;
+		overflow: hidden;
+		}
+		#things:hover .line{
+		 visibility:visible;
+		transform: translate3d(0,0,0);	
+		     
+		}
+		 #things:hover{
+			 overflow:hidden;
+		 }
+		 .line:hover .over{
+			 overflow:hidden;
+		 }
+		#things:hover #mac{
+		transform: translate3d(0,0,0);
+		opacity:0.9;
+		overflow: hidden;	
+		}
+		 .over{
+			 width:96%;height:100%;position: absolute;top:0;left:0;overflow: hidden; transform: translate3d(0,0,0);border:10px solid transprate;
+		 }
+		 .over:hover {
+			 overflow:hidden;
+		 }
+		 #mac{
+			 position:relative;
+			 overflow: hidden;
+			 transform: translate3d(-25px,0,0);
+		transition: opacity 1s, transform 0.35s;
+		 }
+		.new{
+			
+		color:white;margin:15% 0 0 53%;
+		font-size:20px; transform:translate3d(-50px,0,0);
+		transition:transform 0.50s;
+		}
+		#things:hover .new{
+		  color:white;margin:15% 0 0 53%;
+		font-size:20px;transform: translate3d(0,0,0);
+		}
+		.sale{
+		  width:50%;
+		  height:250px;
+		  position:absolute;
+		  top:20%;
+		  color:springgreen;
+		  left:25%;
+		}
+		.summer{
+		  font-size:4vw;
+		  font-weight:600;
+		  font-family:cooper;
+		  text-shadow: 3px 3px 5px black;	
+		}
+		.for{
+		color:unset;
+		text-align:center;
+		font-family:fantasy;
+		font-size:25px;
+		letter-spacing:5px;
+		text-shadow: 2px 2px 4px black;	
+		}
+		.bttn{
+		width:30%;height:35px;background-color:black;color:springgreen;
+		font-size:20px; 
+		
+		font-weight:900;
+		text-align:center;
+		
+		margin:5% 0 0 35%;
+		}
+		.bttn:hover{
+		  outline:5px solid black;
+		  outline-offset: 3px;
+		  cursor: pointer;	
+			background-color: black;
+			color:white;
+		}
+		
+		.save{
+		  width:90%;
+		  height:auto;
+		  background:white;
+		  color:black;
+		  margin:10% 20% 0 0;
+		 
+		}
+		 #prod{
+			 height:40px;
+			  text-align: center;
+			 font-size: 20px;
+			  background-color: yellowgreen;
+			 padding-top: 4px;
+			 cursor: pointer;
+		 }
+		 #prod:hover{
+			 background-color: black;
+			 color:white;
+		 }
+		 #prod1{
+			 height:40px;
+			  text-align: center;
+			 font-size: 20px;
+			  background-color: yellowgreen;
+			 padding-top: 4px;
+			 cursor: pointer;
+		 }
+		 #prod1:hover{
+			  background-color: black;
+			 color:white;
+		
+		 }
+		 #prod2{
+			 height:40px;
+			  text-align: center;
+			 font-size: 20px;
+			  background-color: yellowgreen;
+			 padding-top: 4px;
+			 cursor: pointer;
+		 }
+		 #prod2:hover{
+			  background-color: black;
+			 color:white;
+		 
+		 }
+		 #prod3{
+			 height:40px;
+			  text-align: center;
+			 font-size: 20px;
+			  background-color: yellowgreen;
+			 padding-top: 4px;
+			 cursor: pointer;
+		 }
+		 #prod3:hover{
+			  background-color: black;
+			 color:white;
+		 }
+		 .me1{ display:none;}
+		 .me2{ display:none;}
+		 .me3{ display:none;}
+		 .pic1:hover{transform:rotateY(360deg);transition: 1s;}
+		 
+		 .addbutton{
+			 width:80%;margin: 10% auto; height:30px;background-color: turquoise;color:white;font-size: 18px;font-weight: 700;text-align: center;
+		 }
+		 .addbutton:hover{
+			 outline:3px solid turquoise;
+			 outline-offset: 3px;
+			 cursor: pointer;
+		 }
+		 .backimg{
+			 width:100%;
+			 height: 350px;
+			 background-image:url("images/banner3.jpg");
+			 background-size: 100% 100%;
+			 background-attachment: fixed;
+		 }
+		 .truck{
+			 width:70px;height:70px;background-color: black;color:white;padding: 20px 0 0 25px;float:left;
+		 }
+		 .truck:hover{
+			 background-color: yellowgreen;
+		 }
+		 
+		 
+	    @media screen and (max-width:576px){
+	  .signin{
+	    width:80%;
+		height:400px;
+		background-color:white;
+		position:absolute;
+		top:5%;
+		color:black;
+		box-shadow: 5px 5px 8px black;
+		border-radius:5px;
+		left:10%;
+		z-index:8;
+        visibility:hidden;	  
+			}
+	  .first{
+	  width:100%;
+	  height:120px;
+	  margin-top:20%;
+	  }
+	  .three{
+	   width:100%;
+	  height:40px;
+	 margin-top:10%;
+	  }
+	  .for{
+		color:unset;
+		text-align:center;
+		font-family:fantasy;
+		font-size:20px;
+		}
+	  }
+	  @media screen and (max-width:768px){
+	   .signin{
+	    width:70%;
+		height:400px;
+		background-color:white;
+		position:absolute;
+		top:5%;
+		color:black;
+		box-shadow: 5px 5px 8px black;
+		border-radius:5px;
+		left:15%;
+		z-index:8;
+        visibility:hidden;	  
+		  }
+	  .bttn{
+		width:40%;height:35px;background-color:black;color:springgreen;
+		font-size:20px; 
+		
+		font-weight:900;
+		text-align:center;
+		
+		border:2px solid cyan;
+		margin:5% 0 0 35%;
+		}
+		.bttn:hover{
+		  border:2px solid black;
+		}
+		
+	  .sale{
+		  width:80%;
+		  height:250px;
+		  position:absolute;
+		  top:20%;
+		  color:springgreen;
+		  left:10%;
+		}
+	  .summer{
+		  font-size:6vw;
+		  font-weight:600;
+		  font-family:cooper;
+		  text-shadow: 2px 2px 4px black;
+		}
+	  #things{
+		margin-top:1%;
+		}
+	  .third{
+	   width:100%;
+	  height:40px;
+	 margin-top:5%;
+	  
+	  } 
+	  .new{
+		color:white;margin:15% 0 0 53%;
+		font-size:20px; transform:translate3d(-200px,0,0);
+		transition:transform 0.50s;
+		}
+	  }
+	 @media screen and (max-width:992px)
+	 {
+	  #first{
+	 background-color:black;
+	 color:white;
+	 height:60px;
+	 padding-top:8px;
+	 }
+	 #frow{
+	  width:100%;
+	  height:50px;
+	 }
+	 #srow{
+	  width:100%;
+	 }
+	 #searchbar
+	 {
+	 height:100%;
+	 width:80%;
+	 margin-top:20px;
+	 }
+	 #search{
+	 height:100%;
+	 width:15%;
+	 margin-top:20px;
+	 }
+	 #menubar
+	   {
+	   width:80%;
+	   display:none;
+	   }
+	   #menu{
+	    width:100%;
+	   }
+	   #bar{
+	   visibility:visible;
+	   float:left;
+	   width:50%;
+	   }
+	   #lock{
+	   width:100%;
+	   display:none;
+	   position:absolute;
+	   top:100%;
+	   left:0;
+	   text-align:center;
+	   }
+	   #surya{
+	   width:100%;
+	   height:50px;
+	   background-color:black;
+	   color:white;
+	  display:block;
+	   }
+	   .signup{
+	    width:80%;
+		height:550px;
+		background-color:white;
+		color:black;
+		position:absolute;
+		top:10%;
+		left:10%;
+		z-index:8;
+	    visibility:hidden;
+		 }
+	   .slide{
+	    width:100%;
+		height:350px;
+		position:relative;
+	  }
+	  #ctrl{
+			 background-color: white;position: absolute;box-shadow: 3px 3px 5px black;font-size:20px;font-weight: 600; top:15%;left:12%;display:none;width:350px; height:120px;z-index:15;text-align:center;padding-top: 10px;
+		 }
+	 }
+	 </style>
+	 </head>	  
+	 <body style="background:white;">
+	    <div id="first" class="container-fluid">
+		<div align="center" class="row">
+		<div class="row" style="width:50%;position:relative;">
+		 <div style="border-right:1px solid pink;font-size: 13px;" id="login"  class="col-lg-6">
+		 <a href="#"><i class="fa fa-unlock-alt fa-1x"></i> &nbsp; <b>Sign-In</b>
+		 
+		 </div></a>		
+		 <div style="border-right:1px solid pink;font-size: 13px;" class="col-lg-6">
+		 <i class="fa fa-phone-square fa-1x"></i></i> <b>+91-9876543210</b></div>
+		
+		</div>
+		<div class="signin"  id="exit">
+		 <div class="farm"><h2><b><u>SIGN-IN</u></b></h2></div>
+		 <div class="cross" onclick="myFunction()"><i class="fa fa-times fa-2x"></i></div>
+		 <div class="first"><p style="font-size:28px;"><b>Username</b></p>
+		 <div class="email">
+		 <input style="width:100%;height:100%;border:0;border-bottom: 2px solid black;" type="name" placeholder="Enter Your Username..." name="name"></div>
+		 </div>
+		 <div class="second"><p style="font-size:28px;"><b>Password</b></p>
+		 <div class="email">
+		 <input style="width:100%;height:100%;border:0;border-bottom: 2px solid black;" type="password" placeholder="Enter Your password..." name="pass"></div>
+		 </div>
+		 <div class="third"><div class="button"><b>SUBMIT</b></div></div>
+		 </div>
+		
+		 
+		<div class="row" style="width:50%;position:relative;">
+		 <div style="border-right:1px solid pink;font-size: 13px;" id="logon" class="col-lg-6">
+		 <a href="#"><i class="fa fa-unlock-alt fa-1x"></i> &nbsp; <b>Sign-Up</b></div></a>
+		 <div style="border-right:1px solid pink;font-size: 13px;" class="col-lg-6">
+		 <i class="fa fa-envelope fa-1x"></i> <b>info@mail.com</b></div>
+		</div>
+		<div class="signup"  id="out">
+		 <div class="farm"><h2><b><u>SIGN-UP</b></u></h2></div>
+		 <div class="cross" onclick="myPara()"><i class="fa fa-times fa-2x"></i></div>
+		<div class="one"><p style="font-size:28px;"><b>Name</b></p>
+		 <div class="gmail">
+		 <input style="width:100%;height:100%;border:0;border-bottom: 2px solid black;" type="name" placeholder="Enter Your name..." name="name"></div>
+		 </div>
+		<div class="two"><p style="font-size:28px;"><b>Email</b></p>
+		 <div class="gmail">
+		 <input style="width:100%;height:100%;border:0;border-bottom: 2px solid black;" type="email" placeholder="Enter Your Email..." name="email"></div>
+		 </div>
+		 <div class="two"><p style="font-size:28px;"><b>Password</b></p>
+		 <div class="gmail">
+		 <input style="width:100%;height:100%;border:0;border-bottom: 2px solid black;" type="password" placeholder="Enter Your password..." name="pass"></div>
+		 </div>
+		 <div class="two"><p style="font-size:28px;"><b>Re-Password</b></p>
+		 <div class="gmail">
+		 <input style="width:100%;height:100%;border:0;border-bottom: 2px solid black;" type="password" placeholder="Re-enter Your password..." name="pass"></div>
+		 </div>
+		<div class="three"><div class="button"><b>SUBMIT</b></div></div>
+		</div>
+		</div></div>
+		
+		
+		<div class="menubar">
+		<div class="container-fluid">
+		<div class="row">
+		<div class="row" id="frow">
+		 <div style="padding-top:25px;" align="center" class="col-md-12">
+		<input style="width:70%;background-color:ghostwhite;border:3px solid black;" type="text" placeholder="Search.." name="search">
+        <button  style="width:15%;background-color:black;border:3px solid black;color:white;" type="submit"><i class="fa fa-search"></i></button>
+		 </div>
+		 </div>
+		 
+		<div class="row" id="srow">
+		 <div style="height:60px;" align="center" class="col-md-6"><p class="bajar">SHOPPING MARKET</p></div>
+		 <div align="center" class="col-md-6" style="padding-top:20px;">
+		 <div style="margin-left:25%;">
+		 <a href="#"><div class="icon"><font color="black"><i class="fa fa-google-plus fa-1x"></i></font></div></a>
+		 <a href="#"><div class="icon"><font color="black"><i class="fa fa-facebook fa-1x"></i></font></div></a>
+		 <a href="#"><div class="icon"><font color="black"><i class="fa fa-twitter fa-1x"></i></font></div></a>
+		 <a href="#"><div class="icon"><font color="black"><i class="fa fa-linkedin fa-1x"></i></font></div></a>
+		 </div></div></div></div></div>
+		 </div>
+		 
+		 <div class="container-fluid" style="padding:0px;">
+		  <div class="container" style="background-color:black;">
+		   <div class="row">
+		   <div class="row"  style="position:relative;" id="menubar">
+		    
+		    <div id="col" class="col-md-2"><a href="index.html"><b>Home</b></div></a>
+		    <div id="col" class="col-md-2"><a href="about.html"><b>About</b></div></a>
+		    <div id="col" class="col-md-2"><a id="man" href="#"><b>Men's  ▼</b></a>
+			
+			</div>
+		    <div id="col" class="col-md-2"><a id="woman" href="#"><b>Women's  ▼</b></a></div>
+		    <div id="col" class="col-md-2"><a href="product.html"><b>Product</b></a></div>
+		    <div id="col" class="col-md-2"><a href="contact.html"><b>Contact</b></div></a>
+		    <div class="watch">
+			 <div class="watch2"><div class="gadi"></div>
+			 <div class="item"><ul style="line-height:2.4;font-family: initial;" type="none">
+			 <a href="mens.html"><li>Clothing</li></a>
+			 <a href="mens.html"><li>Wallets</li></a>
+			 <a href="mens.html"><li>Footwear</li></a>
+			 <a href="mens.html"><li>Watches</li></a>
+			 <a href="mens.html"><li>Accessories</li></a>
+			 <a href="mens.html"><li>Bags</li></a>
+			 <a href="mens.html"><li>Caps</li></a>
+			 </ul></div>
+			 <div class="item"><ul style="line-height:2.4;font-family: initial;" type="none">
+			 <a href="mens.html"><li>Jawllary</li></a>
+			 <a href="mens.html"><li>Sunglases</li></a>
+			 <a href="mens.html"><li>Perfurm</li></a>
+			 <a href="mens.html"><li>Beauty</li></a>
+			 <a href="mens.html"><li>Shirts</li></a>
+			 <a href="mens.html"><li>Swimwear</li></a>
+			 <a href="mens.html"><li>Watches</li></a>
+			 </ul></div>
+			</div>
+			</div>
+			  <div class="girl">
+			  <div class="watch2">
+			 <div class="item"><ul style="line-height:2.4;font-family: initial;" type="none">
+			 <a href="womens.html"><li>Clothing</li></a>
+			 <a href="womens.html"><li>Wallets</li></a>
+			 <a href="womens.html"><li>Footwear</li></a>
+			 <a href="womens.html"><li>Watches</li></a>
+			 <a href="womens.html"><li>Accessories</li></a>
+			 <a href="womens.html"><li>Bags</li></a>
+			 <a href="womens.html"><li>Caps</li></a>
+			 </ul></div>
+			 <div class="item"><ul style="line-height:2.4;font-family: initial;" type="none">
+			 <a href="womens.html"><li>Jawllary</li></a>
+			 <a href="womens.html"><li>Sunglases</li></a>
+			 <a href="womens.html"><li>Perfurm</li></a>
+			 <a href="womens.html"><li>Beauty</li></a>
+			 <a href="womens.html"><li>Shirts</li></a>
+			 <a href="womens.html"><li>Swimwear</li></a>
+			 <a href="womens.html"><li>Watches</li></a>
+			 </ul></div>
+			<div class="jooti"></div>
+			</div>
+			  </div>
+		  </div>
+		   <div class="row" id="menu" style="z-index:1;">
+		   <div id="drop" class="col-md-12">
+		   <div id="bar">
+		   <i class="fa fa-bars fa-3x"></i>
+		   </div>
+		  <div class="add" style="position: relative;cursor: pointer;" onclick="myCtrl();"><i class="fa fa-shopping-cart fa-3x"></i></div>
+		  
+		  <div class="row" id="lock" style="margin-left:3%;">
+		    <div id="surya" class="col-md-2"><a href="index.html"><b>Home</b></a></div>
+		    <div id="surya" class="col-md-2"><a href="about.html"><b>About</b></a></div>
+		    <div id="surya" class="col-md-2"><a href="mens.html"><b>Men's Wear</b></a></div>
+		    <div id="surya" class="col-md-2"><a href="womens.html"><b>Women's Wear</b></a></div>
+		    <div id="surya" class="col-md-2"><a href="product.html"><b>Product</b></a></div>
+		    <div id="surya" class="col-md-2"><a href="contact.html"><b>Contact</b></a></div>
+		    </div></div></div></div></div>
+			 <div id="ctrl" onclick="myExit();"><u>No Items Added!</u><br><br>Please select product</div>
+		 <div class="container-fluid" style="padding:0px;position:relative;">
+        <div><img class="slide mySlides" src="p1.jpg" width="100%" height="100%">
+		</div>
+        <div><img class="slide mySlides" src="p2.jpg" width="100%" height="100%">
+		</div>
+        <div><img class="slide mySlides" src="p3.jpg" width="100%" height="100%">
+		</div>
+        <div><img class="slide mySlides" src="p4.jpg" width="100%" height="100%">
+		</div>
+        <button  style="position:absolute;top:45%;left:3%;font-size:30px;" onclick="plusDivs(-1)">&#10094;</button>
+        <button  style="position:absolute;top:45%;right:3%;font-size:30px;" onclick="plusDivs(1)">&#10095;</button>
+      <div class="sale"><p align="center" class="summer">The Summer <font color="yellow">Collection</font></p>
+	  <p class="for">Special For Today</p>
+	   <div class="bttn">Shop Now</div></div>
+	  </div>
+	   
+	   <div class="container" style="margin:10% 0 0 5%;background-color:white;">
+	   <div class="row">
+	   
+	    <div id="things" class="col-md-6">
+	    <div class="over">
+	    <img id="mac" src="1.jpg" width="105%" height="100%">
+	    </div>
+		<h4 style="position:absolute;top:20%;left:53%;color:white;"><b><font color="yellowgreen">S</font>hopping</b></h4>
+		<div class="line"><p class="new"><font color="yellowgreen"><b>New</b></font> Arrivals</p></div>
+		
+		</div>
+   
+	   <div  id="things" class="col-md-6"><div class="over"><img id="mac" src="2.jpg" width="105%" height="100%"></div>
+	   <h3 style="position:absolute;top:20%;left:53%;color:white;"><b><font color="yellowgreen">S</font>hopping</b></h3>
+	   <div class="line"><p class="new"><font color="yellowgreen"><b>New</b></font> Arrivals</p></div>
+	   </div>
+	   </div>
+	   </div>
+	   <div class="container-fluid" style="margin-top:10%;">
+	   <div class="row">
+	    <div class="col-md-6"><img src="mid.jpg" width="100%" height="400px"></div>
+		<div class="col-md-6" style="background:cyan;">
+		<div class="save">
+		<h3 style="text-align:center;padding-top:20px;margin:3%;"><b>Save Upto <font color="springgreen">50%</font> of This Week</b></h3>
+		<p style="text-align:left;margin:3%;">Suspendisse varius turpis efficitur erat laoreet dapibus.
+		Mauris sollicitudin scelerisque commodo.Nunc dapibus mauris sed metus finibus posuere.Suspendisse varius turpis efficitur erat laoreet dapibus.
+		Mauris sollicitudin scelerisque commodo.Nunc dapibus mauris sed metus finibus posuere.</p>
+		
+		 <div class="row">
+		<div align="center" style="margin-bottom: 3%;" class="col-sm-4"><i class="fa fa-user-circle fa-2x"></i>
+		<h4>Customer</h4><h3><b>1000</b></h3></div>
+		<div align="center" style="margin-bottom: 3%;" class="col-sm-4"><i class="fa fa-calendar fa-2x"></i>
+		<h4>Events</h4><h3><b>100</b></h3></div>
+		<div align="center" style="margin-bottom: 3%;" class="col-sm-4"><i class="fa fa-diamond fa-2x"></i>
+		<h4>Awards</h4><h3><b>50</b></h3></div>
+		</div>
+		</div></div>
+	   </div>
+	   </div>
+	   
+	   <div class="container" style="margin-left: 5%;">
+	    <h1 align="center" style="font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;margin: 6% 0 3% 0; "><b>What's</b> Trending</h1>
+	 
+       <div class="row">
+	   
+	    <div id="things" class="col-md-6">
+	    <div class="over">
+	    <img id="mac" src="images/bb1.jpg" width="105%" height="100%">
+	    </div>
+		<h4 style="position:absolute;top:20%;left:53%;color:white;"><b><font color="yellowgreen">Shop</font> Now</b></h4>
+		<div class="line"><p class="new"><b>Up to </b>65 %</p></div>
+		
+		</div>
+   
+	   <div  id="things" class="col-md-6"><div class="over">
+	   <img id="mac" src="images/bottom2.jpg" width="105%" height="100%"></div>
+	   <h3 style="position:absolute;top:20%;left:53%;color:white;"><b><font color="yellowgreen">Shop</font> Now</b></h3>
+	   <div class="line"><p class="new"><b>Up to</b> 55 %</p></div>
+	   </div>
+	   </div>
+	   <div class="row" style="margin-top: 3%;">
+	     <div id="things" class="col-md-6">
+	    <div class="over">
+	    <img id="mac" src="images/bottom3.jpg" width="105%" height="100%">
+	    </div>
+		<h4 style="position:absolute;top:20%;left:53%;color:white;"><b><font color="yellowgreen">Shop</font> Now</b></h4>
+		<div class="line"><p class="new"><b>Up to</b> 65 %</p></div>
+		
+		</div>
+   
+	   <div  id="things" class="col-md-6"><div class="over">
+	   <img id="mac" src="images/bottom4.jpg" width="105%" height="100%"></div>
+	   <h3 style="position:absolute;top:20%;left:53%;color:white;"><b><font color="yellowgreen">Shop</font> Now</b></h3>
+	   <div class="line"><p class="new"><b>Up to</b> 55 %</p></div>
+	   </div>
+	   </div>
+	   </div>
+	   <div class="container-fluid">
+	   <div class="row" style="margin-top: 5%;">
+	   <div class="col-md-6"><img  src="images/bot_1.jpg" width="105%" height="100%">
+	   <h2 style="position:absolute;top:40%;left:53%;color:white;"><b>Flat <font color="yellowgreen">50% </font>off</b></h2>
+	   </div>
+	   <div class="col-md-6" style="height: 350px;"><img id="mac" src="images/inner2.jpg" width="105%" height="100%">
+	   <h2 style="position:absolute;top:40%;left:53%;color:white;"><b>Flat <font color="yellowgreen">50% </font>off</b></h2></div>
+	   </div>
+			 </div>
+	   <div class="container" style="margin:0% 0%  5% 5%;">
+        <h1 align="center" style="font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;margin: 5% 0 3% 0;"><u><b>New</b> Arrivals</u></h1>
+	     <div class="row">
+	     <div class="col-sm-3" id="prod"><b>MEN'S</b></div>
+	     <div class="col-sm-3" id="prod1"><b>WOMEN'S</b></div>
+	     <div class="col-sm-3" id="prod2"><b>BAGS</b></div>
+	     <div class="col-sm-3" id="prod3"><b>FOOTWEAR</b></div>
+	   </div>
+     
+     
+      <div class="me">
+	     <div class="row" style="margin-top:3%;">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px; box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m1.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Formal Blue Shirt</u></h5>
+	           <h6 align="center">$ 45.99 &nbsp; <font color="cyan"><del>$ 69.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m2.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Gabi Full Sleeve</u></h5>
+	           <h6 align="center">$ 50.99 &nbsp; <font color="cyan"><del>$ 65.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	              <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m3.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Dark Blue Pants</u></h5>
+	           <h6 align="center">$ 40.00 &nbsp; <font color="cyan"><del>$ 50.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	             <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m4.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Round T-Shirt</u></h5>
+	           <h6 align="center">$ 80.99 &nbsp; <font color="cyan"><del>$ 99.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div></div></div>
+	   
+	   <div class="row">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m5.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Round T-Shirt</u></h5>
+	           <h6 align="center">$ 40.99 &nbsp; <font color="cyan"><del>$ 45.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m6.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Round T-Shirt</u></h5>
+	           <h6 align="center">$ 60.99 &nbsp; <font color="cyan"><del>$ 75.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	             <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m7.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Round T-Shirt</u></h5>
+	           <h6 align="center">$ 30.99 &nbsp; <font color="cyan"><del>$ 35.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/m8.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Round T-Shirt</u></h5>
+	           <h6 align="center">$ 80.99 &nbsp; <font color="cyan"><del>$ 99.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div></div> </div>
+	   
+	   
+	    <div class="me1">
+	     <div class="row" style="margin-top:3%;">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w1.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u> Black Skirt</u></h5>
+	           <h6 align="center">$ 130.99 &nbsp; <font color="cyan"><del>$ 149.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w2.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Solid Blue Top</u></h5>
+	           <h6 align="center">$ 140.99 &nbsp; <font color="cyan"><del>$ 159.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w3.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Skinny Jeans</u></h5>
+	           <h6 align="center">$ 150.99 &nbsp; <font color="cyan"><del>$ 199.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w4.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Black Basic Shorts</u></h5>
+	           <h6 align="center">$ 110.00 &nbsp; <font color="cyan"><del>$ 130.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div></div></div>
+	   
+	   <div class="row">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w5.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Pink Track Pants</u></h5>
+	           <h6 align="center">$ 80.99 &nbsp; <font color="cyan"><del>$ 99.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w6.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Analog Watch</u></h5>
+	           <h6 align="center">$ 120.99 &nbsp; <font color="cyan"><del>$ 139.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w7.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Ankle Length Socks</u></h5>
+	           <h6 align="center">$ 140.00 &nbsp; <font color="cyan"><del>$ 169.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/w8.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Reebok Women's</u></h5>
+	           <h6 align="center">$ 99.99 &nbsp; <font color="cyan"><del>$ 129.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	   </div>
+	   </div>
+	   
+	   
+	   
+	    <div class="me2">
+	     <div class="row" style="margin-top:3%;">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b1.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Laptop Bag</u></h5>
+	           <h6 align="center">$ 199.99 &nbsp; <font color="cyan"><del>$ 229.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b2.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Puma Backpack</u></h5>
+	           <h6 align="center">$ 150.99 &nbsp; <font color="cyan"><del>$ 169.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b3.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Laptop Backpack</u></h5>
+	           <h6 align="center">$ 120.99 &nbsp; <font color="cyan"><del>$ 129.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b4.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Travel Duffel Bag</u></h5>
+	           <h6 align="center">$ 140.99 &nbsp; <font color="cyan"><del>$ 159.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	   </div>
+	   
+	   <div class="row">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b5.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Hand-held Bag</u></h5>
+	           <h6 align="center">$ 110.99 &nbsp; <font color="cyan"><del>$ 129.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b6.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Butterflies Bag</u></h5>
+	           <h6 align="center">$ 150.99 &nbsp; <font color="cyan"><del>$ 180.50</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b7.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Costa Swiss Bag</u></h5>
+	           <h6 align="center">$ 115.99 &nbsp; <font color="cyan"><del>$ 129.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/b8.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Noble Designs Bag</u></h5>
+	           <h6 align="center">$ 160.00 &nbsp; <font color="cyan"><del>$ 179.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	   </div>
+	   </div>
+	   
+	   
+	   
+	   
+	   
+	    <div class="me3">
+	     <div class="row" style="margin-top:3%;">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s1.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Running Shoes</u></h5>
+	           <h6 align="center">$ 80.00 &nbsp; <font color="cyan"><del>$ 89.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s2.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Shoetopia Lace Up</u></h5>
+	           <h6 align="center">$ 160.00 &nbsp; <font color="cyan"><del>$ 179.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s3.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Steemo Casual(Black)</u></h5>
+	           <h6 align="center">$ 90.00 &nbsp; <font color="cyan"><del>$ 110.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s4.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Benetton Flip Flops</u></h5>
+	           <h6 align="center">$ 120.00 &nbsp; <font color="cyan"><del>$ 139.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	   </div>
+	   
+	   <div class="row">
+	        <div class="row" style="width:50%;margin-left: 1%;">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s5.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Moonwalk Bellies</u></h5>
+	           <h6 align="center">$ 110.00 &nbsp; <font color="cyan"><del>$ 129.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px  black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s6.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Aero Canvas Loafers</u></h5>
+	           <h6 align="center">$ 70.00 &nbsp; <font color="cyan"><del>$ 79.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	     </div>
+	     <div class="row" style="width:50%;margin-left: 1%; ">
+	           <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	           <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s7.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Sporty Canvas Shoes</u></h5>
+	           <h6 align="center">$ 130.00 &nbsp; <font color="cyan"><del>$ 149.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>
+	         <div class="col-lg-5" style="height:400px;box-shadow: 1px 1px 10px 1px black;margin: 3.5%;">
+	         <div style="color: white;text-align: center;width: 18%;background-color: yellowgreen"><b>New</b></div>
+	           <img src="images/s8.jpg" class="pic1" width="100%" height="60%">
+	           <h5 align="center" style="color: yellowgreen;font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif';"><u>Women BLACK Heels</u></h5>
+	           <h6 align="center">$ 150.00 &nbsp; <font color="cyan"><del>$ 189.00</del></font></h6>
+	           <div class="addbutton">Add To Cart</div>
+	        </div>  </div> </div> </div> </div>
+	   
+	   
+	   <div class="backimg">
+	   	 <p align="center" style="font-size: 6vw;color:white;font-weight: 600;padding-top: 5%;">We Offer Flat <font color="black">40%</font> Discount</p>
+	   	  <div class="addbutton" style="width:10%;margin-top:2%; ">Shop</div>
+	   </div>
+	   
+	   
+	   <div class="container-fluid" style="margin:5% 0 3% 0;">
+	   <div class="row">
+	     <div class="col-lg-3" style="margin-bottom: 1%;">
+	     	 <div class="truck">
+	     	 	<i class="fa fa-truck fa-1x"></i>
+	     	 </div><div style="float:left;width:70%;margin-left: 3%;">
+	     	 <h6><font color="yellowgreen">FREE SHIPPING</font></h6>
+	     	 <p>Our support for you anytime open</p></div>
+	     </div>
+	     <div class="col-lg-3" style="margin-bottom: 1%;">
+	     	<div class="truck">
+	     		<i class="fa fa-headphones fa-1x"></i>
+	     	</div><div style="float:left;width:70%;margin-left: 3%;">
+	     	<h6><font color="yellowgreen">24/7 SUPPORT</font></h6>
+	     	<p>Our support for you anytime open</p></div>
+	     </div>
+	     <div class="col-lg-3" style="margin-bottom: 1%;">
+	     	<div class="truck">
+	     		<i class="fa fa-vcard fa-1x"></i>
+	     	</div><div style="float:left;width:70%;margin-left: 3%;">
+	     	<h6><font color="yellowgreen">MONEY BACK GUARANTEE</font></h6>
+	     	<p>Our support for you anytime open</p></div>
+	     </div>
+	     <div class="col-lg-3">
+	     	<div class="truck">
+	     		<i class="fa fa-gift fa-1x"></i>
+	     	</div>
+	     	<div style="float:left;width:70%;margin-left: 3%;">
+	     	<h6><font color="yellowgreen">FREE GIFT COUPONS</font></h6>
+	     	<p>Our support for you anytime open</p></div>
+	     </div>
+	   </div>
+	   </div>
+	   <div align="center" class="container-fluid" style="background-color: black;color:#848484;">
+	     <div class="row" style="padding-top: 5%;">
+	        <div class="col-lg-3">
+	        	<h3>S<font color="white">hopping Market</font></h3>
+	        	<p align="justify" style="line-height: 3;"> Mhiih iuhiuh bbikbik bbbkkjk nnlkn Mhiih iuhiuh bbikbik bbbkkjk nnlkn
+	        	Mhiih iuhiuh bbikbik bbbkkjk nnlkn.</p>
+	        	<div>
+		 <a href="#"><div class="icon1"><font color="white"><i class="fa fa-google-plus fa-1x"></i></font></div></a>
+		 <a href="#"><div class="icon1"><font color="white"><i class="fa fa-facebook fa-1x"></i></font></div></a>
+		 <a href="#"><div class="icon1"><font color="white"><i class="fa fa-twitter fa-1x"></i></font></div></a>
+		 <a href="#"><div class="icon1"><font color="white"><i class="fa fa-linkedin fa-1x"></i></font></div></a>
+		 </div>
+	        </div>
+	        <div class="col-lg-3">
+	        	<h3><font color="white">Our Information</font></h3>
+	        	 <ul type="none">
+	        	   <a href="index.html"><li style="color:#848484;line-height: 2;"><b>Home </b></li></a>
+	        	   <a href="about.html"><li style="color:#848484;line-height: 2;"><b>About </b></li></a>
+	        	   <a href="mens.html"><li style="color:#848484;line-height: 2;"><b>Men's Wear </b></li></a>
+	        	   <a href="womens.html"><li style="color:#848484;line-height: 2;"><b>Women's Wear </b></li></a>
+	        	   <a href="product.html"><li style="color:#848484;line-height: 2;"><b>Product </b></li></a>
+	        	   <a href="contact.html"><li style="color:#848484;line-height: 2;"><b>Contact </b></li></a>
+	        	   
+	        	 </ul>
+	        </div>
+	        <div class="col-lg-3">
+	        	<h3><font color="white">Store Information</font></h3>
+	        	<div style="color:white;"><i class="fa fa-mobile fa-2x"></i> &nbsp;&nbsp;&nbsp;<b>Phone Number</b></div>
+	        	<p> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;+91-9876543210</p>
+	        	<div style="color:white;"><i class="fa fa-envelope-o fa-1x"></i> &nbsp;&nbsp;&nbsp;<b>Email Address</b></div>
+	        	<p> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Email : <b>info@gmail.com</b></p>
+	        	<div style="color:white;"><i class="fa fa-map-marker fa-1x"></i> &nbsp;&nbsp;&nbsp;<b>Location</b></div>
+	        	<p> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Murlipura, Jaipur <br> 
+	        	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Rajsthan, Pin : 302015</p>
+	        </div>
+	        <div class="col-lg-3">
+	        	<h3><font color="white">Our Team</font></h3>
+	        	<div class="row">
+	        	  <div class="col-lg-6"><img src="images/t1.jpg" width="100" height="100"></div>
+	        	  <div class="col-lg-6"><img src="images/t2.jpg" width="100" height="100"></div>
+	        	</div>
+	        	<div class="row">
+	        	  <div class="col-lg-6"><img src="images/t3.jpg" width="100" height="100"></div>
+	        	  <div class="col-lg-6"><img src="images/t4.jpg" width="100" height="100"></div>
+	        	</div>
+	        </div>
+	      </div>
+	        <div class="row">
+	           <hr style="border-bottom: 1px solid #848484;width: 80%; margin: 2% 0 2% 10%;">
+	          <div class="col-md-6"><h3><font color="white">Subscribe For More News</font></h3></div>
+	          <div class="col-md-6">
+	          	<input style="width:50%;background-color:ghostwhite;border:3px solid black;" type="text" placeholder="Search.." name="search">
+        <button  style="width:15%;background-color:#848484;border:3px solid black;color:white;" type="submit"><i class="fa fa-search"></i></button>
+	          </div>
+	          <hr style="border-bottom: 1px solid #848484;width: 80%; margin: 2% 0 5% 10%;">
+	        </div>
+	        <div><b>© 2019 MAHIWEBS. ALL RIGHTS RESERVED | DESIGN BY:- <font color="white">MAHENDRA CHOUDHARY</font></b> </div>
+	   </div>
+	   <script>
+		   $(document).ready(function(){
+			$("#prod").click(function(){
+			$(".me").fadeIn("fast");
+			$(".me1, .me2, .me3").fadeOut("fast");	
+			});   
+			 $("#prod1").click(function(){
+			$(".me1").fadeIn("fast");
+			$(".me, .me2, .me3").fadeOut("fast");	 
+			}); 
+			 $("#prod2").click(function(){
+			$(".me2").fadeIn("fast");	
+			$(".me, .me1, .me3").fadeOut("fast");	 
+			}); 
+			  $("#prod3").click(function(){
+			$(".me3").fadeIn("fast");
+			$(".me, .me1, .me2").fadeOut("fast");	  
+			});  
+		   });
+		   </script>
+	    <script>
+	     function myFunction(){
+		 document.getElementById("exit").style.visibility = "hidden";
+		 }
+		 function myPara(){
+		 document.getElementById("out").style.visibility = "hidden";
+		 }
+		</script>
+		<script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+           function plusDivs(n) {
+          showDivs(slideIndex += n);
+          }
+           function showDivs(n) {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         if (n > x.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = x.length}
+         for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+         }
+           x[slideIndex-1].style.display = "block";  
+         } 
+      </script>
+	  <script>
+         var myIndex = 0;
+         carousel();   
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";    
+          }
+          setInterval(carousel, 5000); 
+      </script>
+	  
+	 </body>
+</html>	 
